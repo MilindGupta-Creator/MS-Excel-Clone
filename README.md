@@ -1,4 +1,5 @@
 # MS-Excel-Clone
 Current live website ::> https://milindgupta-creator.github.io/MS-Excel-Clone/
 
-<img src="url/Excelpic.png" width="250">
+<br>
+<img src="https://github.com/MilindGupta-Creator/MS-Excel-Clone/blob/main/Excelpic.PNG" width="250px">
