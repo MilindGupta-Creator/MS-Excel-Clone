@@ -1,0 +1,186 @@
+body{
+    margin: 0;
+    overflow: hidden;  /* this will make default scrolling invisibel */
+    font-size: 14;
+}
+
+*{  /* *(star) is used to apply to the full window */
+    box-sizing: border-box;
+
+    /*
+        we used this statement bcoz doc full height is
+        100vh and then used a 2px border which means
+        additional 2px is applied , so if we 
+        box-sizing: border-box; the border is fixed
+    */
+}
+
+.container{
+    height: 100vh;
+}
+
+.title-bar{
+    height: 5vh;
+    background-color: #107c41;
+    display: flex;  /* that means our content is flexible now */
+    /* by default flex direction is row */
+    justify-content: center; /* if flex direction is row it align it in horizantally */
+    align-items: center; /* if flex direction is row it align it in vertically */
+    /* the above two lines make it in center from row and column wise */
+    color: #fff;
+}
+
+.menu-bar{
+    height: 5vh;
+    background-color: #107c41;
+    display: flex; /* this makes them align in the row */
+
+    
+}
+
+.menu-item{
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #fff;
+    font-size: 18;
+    display: flex;
+    align-items: center;
+}
+
+.menu-item.selected{ /* Ek se zyada class hai toh dot lgaana h */
+    background-color: #fff;
+    color: #107c41;
+}
+
+.menu-item:hover{
+    background-color: #04381b; /* yeh krne se hover ho jaayega lekin hum chahte h ki selected waale main hover na dikhe isliye
+                                    usko white se krr de rhe h  */
+}
+
+.menu-item.selected:hover{
+    background-color: #fff;
+    cursor: default;
+}
+
+
+.menu-icon-bar{
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    background-color: rgba(211, 211, 211, 0.568);
+}
+
+.menu-icon{
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.font-family-selector{
+    height: 26px;
+    font-size: 18px;
+    width: 136px;
+}
+
+.selector{
+    height: 26px;
+    font-size: 18px;
+}
+
+.selector option{
+    font-size: 20px;
+}
+.menu-icon:hover{
+    background-color: rgba(211, 211, 211, 0.863);
+    cursor: pointer;
+    height: 100%;
+}
+
+
+
+.formula-bar{
+    height: 5vh;
+
+}
+
+.data-container{
+    height: 75vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.select-all {
+    width: 30px;
+    height: 30px;
+    border: 1px solid lightgray;
+}
+
+.column-name-container {
+    width: calc(100vw - 30px);
+    height: 30px;
+    border: 1px solid lightgray;
+    
+}
+
+.row-name-container {
+    width: 30px;
+    height: calc(75vh - 30px);
+    border: 1px solid lightgray;
+}
+
+.input-cell-container {
+    width: calc(100vw - 30px);
+    height: calc(75vh - 30px);
+    border: 1px solid lightgray;
+}
+
+.sheet-bar{
+    height: 4vh;
+    display: flex;
+    align-items: center;
+}
+.scroller{
+    width: 70px;
+}
+.icon-left-scroll, .icon-right-scroll {
+    font-size: 30px;
+}
+
+.icon-left-scroll:hover, .icon-right-scroll:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.icon-add {
+    color: #107c41;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 40px;
+}
+
+.icon-add:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.sheet-tab-container {
+    border: 1px solid lightgray;
+    width: calc(100vw - 110px);
+}
+
+.sheet-tab {
+    border-bottom: 4px solid#107c41;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    width: 80px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    border-right: 1px solid lightgray;
+}
+
+.sheet-tab:hover {
+    cursor: default;
+}
